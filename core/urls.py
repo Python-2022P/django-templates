@@ -21,5 +21,5 @@ from api.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', HomeView.as_view()),
+    path('home/<str:username>', HomeView.as_view()),
 ]
